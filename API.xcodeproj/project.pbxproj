@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		C36824C8261705E600908F26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36824C6261705E600908F26 /* LaunchScreen.storyboard */; };
 		C36824D3261705E600908F26 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36824D2261705E600908F26 /* APITests.swift */; };
 		C36824DE261705E600908F26 /* APIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36824DD261705E600908F26 /* APIUITests.swift */; };
+		C36824F0261707D600908F26 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C36824EF261707D600908F26 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36824F0261707D600908F26 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +154,9 @@
 			dependencies = (
 			);
 			name = API;
+			packageProductDependencies = (
+				C36824EF261707D600908F26 /* SwiftyJSON */,
+			);
 			productName = API;
 			productReference = C36824B8261705E500908F26 /* API.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +228,9 @@
 				Base,
 			);
 			mainGroup = C36824AF261705E500908F26;
+			packageReferences = (
+				C36824EE261707D600908F26 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = C36824B9261705E500908F26 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -591,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C36824EE261707D600908F26 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C36824EF261707D600908F26 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C36824EE261707D600908F26 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C36824B0261705E500908F26 /* Project object */;
 }
